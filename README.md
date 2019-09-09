@@ -6,5 +6,6 @@ helm install --name prometheus monitoring/prometheus --set pushgateway.persisten
 helm install --name grafana monitoring/grafana  --set service.type=NodePort
 
 # Uninstalling the helm charts
+
 helm delete --purge prometheus
 helm delete --purge grafana
